@@ -1,0 +1,134 @@
+.login-page {
+  max-width: 85%;
+  margin: 3rem auto;
+  gap: 5rem;
+  justify-content: center;
+}
+.login-page-left {
+  padding: 4rem 0;
+  h1 {
+    color: #1a1a1a;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.322px;
+  }
+  p {
+    color: #6d6d6d;
+    font-family: Poppins;
+    font-size: 11.224px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo {
+    width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+  .login {
+    border-radius: 31.519px;
+    background: #f87c02;
+    padding: 0 3rem;
+    a {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 13.224px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .form-control {
+    color: #b1b1b1;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 16.589px;
+    background: #f3f9ff;
+    padding-left: 3.5rem;
+    
+  }
+  .forget-password {
+    color: #f87c02;
+    font-family: Poppins;
+    font-size: 13.883px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .form-text {
+    color: #b1b1b1;
+    font-family: Poppins;
+    font-size: 11.224px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    .sign-up {
+      color: #0f8805;
+    }
+  }
+
+  .password {
+    position: relative;
+    width: fit-content;
+    .password-image {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 1rem;
+      width: 20px;
+    }
+    .eye-image {
+      position: absolute;
+      transform: translateY(50%);
+      bottom: 50%;
+      right: 2rem;
+      width: 20px;
+    }
+  }
+  .email {
+    position: relative;
+    width: fit-content;
+    .email-image {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 1rem;
+      width: 20px;
+    }
+  }
+}
+
+.login-page-right {
+  width: min-content;
+  padding: 2rem;
+  border-radius: 29.952px;
+  background: #fff;
+  box-shadow: 0px 4.608px 69.581px 4.608px rgba(0, 0, 0, 0.16);
+  .heading-health {
+    max-width: 89%;
+    color: #4b4b4b;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2.304px;
+    padding-top: 2rem;
+  }
+  span {
+    color: #ee5b27;
+  }
+  .image1 {
+    width: 300px;
+    img {
+      width: 100%;
+    }
+  }
+}
