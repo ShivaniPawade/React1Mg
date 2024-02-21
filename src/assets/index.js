@@ -1,0 +1,13 @@
+import logo from './images/logo.png'
+import call from './images/call.png'
+import dashboard from './images/dashboard.svg'
+import ambulance from './images/ambulance.svg'
+import offer from './images/local-offer.svg'
+import account from './images/mdi_account-outline.svg'
+import group from './images/group.svg'
+import report from './images/reports.svg'
+import logout from './images/logout.svg'
+import bell from './images/bell-bold.svg'
+import map from './images/map.svg'
+import user from './images/user-img.png'
+export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user }
