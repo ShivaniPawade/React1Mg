@@ -10,4 +10,8 @@ import logout from './images/logout.svg'
 import bell from './images/bell-bold.svg'
 import map from './images/map.svg'
 import user from './images/user-img.png'
-export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user }
+import mapview from './images/mapview.png'
+import ambulanceImage from './images/ambulance-image.png'
+import recentNews from './images/recent-news.png'
+import callRequest from './images/callRequest.svg'
+export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest }
