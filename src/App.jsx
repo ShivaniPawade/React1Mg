@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -7,6 +6,8 @@ import Login from "./auth/Login";
 import { Routes, Route , Outlet} from "react-router-dom";
 import HomeCards from "./components/dashboard/Home/HomeCards";
 import Layout from "./components/layout/Layout";
+import HomeComponent from "./components/dashboard/Home/HomeComponent";
+import MapComponent from "./components/maps/MapComponent";
 
 
 function App() {
@@ -21,13 +22,14 @@ function App() {
           element={
             <Layout>
               <Outlet />
+  
             </Layout>
           }
         >
           {/* Child routes rendered inside the Outlet */}
-          <Route path="/" element={<HomeCards />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/1MG Dashboard" element={<HomeComponent />} />
+          <Route path="/map-live-view" element={<MapComponent/>} />
+        
         </Route>
       </Routes>
     </>
