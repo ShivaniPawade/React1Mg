@@ -22,7 +22,7 @@ function App() {
           element={
             <Layout>
               <Outlet />
-  
+              <HomeComponent/>
             </Layout>
           }
         >

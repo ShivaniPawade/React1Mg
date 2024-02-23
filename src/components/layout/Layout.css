@@ -42,7 +42,7 @@
       border-radius: 5.645px;
       box-shadow: 0px 0px 13.548px 1.882px rgba(0, 0, 0, 0.13);
     }
-    
+
     .logout-link {
       background: #ff4646;
     }
@@ -64,14 +64,15 @@
 
 .dashboard {
   /* border: 1px solid black; */
-
-  .map-view {
-    padding-inline: 1.2rem;
+  .common-border {
     border-radius: 10.944px;
     background: #fff;
     box-shadow: 0px 0px 16.142px 1.824px rgba(0, 0, 0, 0.09);
   }
-  .map-title {
+  .map-view {
+    padding-inline: 1.2rem;
+  }
+  .common-heading {
     color: #1e1e1e;
     font-family: Poppins;
     font-size: 23.712px;
@@ -157,16 +158,13 @@
   .cards {
     justify-content: center;
     align-items: center;
-    border-radius: 10.944px;
-    background: #fff;
-    box-shadow: 0px 0px 16.142px 1.824px rgba(0, 0, 0, 0.09);
-
     .icon-background {
       border-radius: 5.472px;
       background-color: #ef5820;
       width: 32.832px;
       height: 32.832px;
-      justify-content:center;
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
     .call-type {
@@ -196,6 +194,64 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: -1.216px;
+    }
+  }
+  /* ----- call details  -------*/
+  .call-details {
+    padding-inline: 1.2rem;
+    width: 694.944px;
+    height: 325.584px;
+  }
+  .view-details {
+    color: #ef5820;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 16.416px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.657px;
+  }
+  table {
+    thead {
+      background-color: #eff7df;
+    }
+    tr:hover {
+      background-color: #fce2c9;
+    }
+    th,
+    td {
+      text-align: center;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10.506px;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.42px;
+      border-bottom: 1.751px solid #e8e8e8;
+    }
+    th {
+      padding: 0.5rem 1rem;
+      color: #4b4b4b;
+      font-weight: 700;
+    }
+    th:first-child {
+      border-top-left-radius: 10.50px;
+    }
+    th:last-child {
+      border-top-right-radius: 10.50px;
+    }
+    td {
+      color: #6d6d6d;
+      font-weight: 600;
+      padding: 0.5rem;
+    }
+    td:first-child{
+      border-left: 1.751px solid #e8e8e8;
+    }
+    td:last-child{
+      border-right: 1.751px solid #e8e8e8;
+      padding: 0rem 1rem;
     }
   }
 }

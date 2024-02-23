@@ -14,4 +14,7 @@ import mapview from './images/mapview.png'
 import ambulanceImage from './images/ambulance-image.png'
 import recentNews from './images/recent-news.png'
 import callRequest from './images/callRequest.svg'
-export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest }
+import callDispatched from './images/callDispatched.svg'
+import callDeclined from './images/callDeclined.svg'
+import callCompleted from './images/callCompleted.svg'
+export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted }

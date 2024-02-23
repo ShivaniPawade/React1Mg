@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import { Link } from "react-router-dom";
 import './Layout.css'
-import { dashboard, logo, call, logout, report, bell, offer, ambulance, account, group, map, user, mapview, ambulanceImage, callRequest } from "../../assets";
+import { dashboard, logo, call, logout, report, bell, offer, ambulance, account, group, map, user, mapview, ambulanceImage, callRequest,callDispatched,callDeclined } from "../../assets";
 import NavbarCards from "./NavbarCards";
 import HomeComponent from "../dashboard/Home/HomeComponent";
 const Layout = ({children}) => {

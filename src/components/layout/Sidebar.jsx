@@ -18,7 +18,7 @@ const Sidebar = () => {
           <div className="icons-border">
             <img className="icons" src={call} alt="icon"></img>
           </div>
-          <Link to={"/calls"} className="text-decoration-none"> <h2 className="sidebar-links pt-2 ">Calls</h2></Link>
+          <Link  className="text-decoration-none"> <h2 className="sidebar-links pt-2 ">Calls</h2></Link>
         </div>
         <div className="d-flex align-items-center mb-3">
           <div className="icons-border">

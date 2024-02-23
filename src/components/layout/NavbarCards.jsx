@@ -4,7 +4,7 @@ import './Layout.css'
 const NavbarCards = (props) => {
     console.log(props)
     return (
-            <div className="cards d-flex p-3">
+            <div className="cards common-border d-flex gap-3 px-3 py-1">
                 <div className="icon-background">
                     <img className="icon" src={props.item.icon}></img>
                 </div>
