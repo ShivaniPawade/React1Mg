@@ -17,4 +17,5 @@ import callRequest from './images/callRequest.svg'
 import callDispatched from './images/callDispatched.svg'
 import callDeclined from './images/callDeclined.svg'
 import callCompleted from './images/callCompleted.svg'
-export { logo, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted }
+import ambulancelocate from './images/ambulancelocate.png'
+export { logo,ambulancelocate, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted }
