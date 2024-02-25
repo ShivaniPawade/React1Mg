@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .layout {
+ 
   /* background-color: rgb(176, 174, 174); */
   max-width: 95%;
   margin: auto;
@@ -19,6 +20,7 @@
   }
 
   .sidebar {
+  
     width: 175px;
     /* border: 1px solid black; */
 

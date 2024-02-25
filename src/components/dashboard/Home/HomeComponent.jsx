@@ -271,8 +271,8 @@ const HomeComponent = () => {
           </table>
         </div>
         <div className='graph common-border'>
-          <h2 className='text-center'></h2>
-        </div>
+          <h2 className='text-center'>Turn Around Time</h2>
+               </div>
       </div>
 
 
