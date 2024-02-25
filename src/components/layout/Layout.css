@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 .layout {
- 
   /* background-color: rgb(176, 174, 174); */
   max-width: 95%;
   margin: auto;
@@ -20,7 +19,6 @@
   }
 
   .sidebar {
-  
     width: 175px;
     /* border: 1px solid black; */
 
@@ -263,12 +261,21 @@
   .graph {
     width: 344.736px;
     height: 325.584px;
+    .turn-around {
+      color: #1e1e1e;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 27.36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
   /* -------- audit window  --------- */
   .audit-window {
     padding-inline: 1.2rem;
-    /* width: 1061.568px;
-    height: 463.296px; */
+    /* width: 1061.568px; */
+    /* height: 463.296px; */
   }
   .th-padding {
     padding: 0.5rem 2rem;

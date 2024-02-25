@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { ambulanceImage, call, callRequest, mapview, callDispatched, callDeclined, callCompleted } from '../../../assets'
 import NavbarCards from '../../layout/NavbarCards'
 import { Link } from 'react-router-dom'
+import PaginationComponent from '../../commonComponents/Pagination'
+import PieChartWithCenterLabel from '../../commonComponents/Chart'
 
 const HomeComponent = () => {
   const [userData, setuserData] = useState([
@@ -217,62 +219,16 @@ const HomeComponent = () => {
                   </tr>
                 )
               })}
-              {/* <tr>
-                <td className='sr-border'>1</td>
-                <td>Amit J.</td>
-                <td>919988776655</td>
-                <td>65/Male</td>
-                <td>20-12-2023</td>
-                <td>1455</td>
-                <td>Chest Pain</td>
-                <td>28.67 N-77.06 E</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Amit J.</td>
-                <td>919988776655</td>
-                <td>65/Male</td>
-                <td>20-12-2023</td>
-                <td>1455</td>
-                <td>Chest Pain</td>
-                <td>28.67 N-77.06 E</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Amit J.</td>
-                <td>919988776655</td>
-                <td>65/Male</td>
-                <td>20-12-2023</td>
-                <td>1455</td>
-                <td>Chest Pain</td>
-                <td>28.67 N-77.06 E</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Amit J.</td>
-                <td>919988776655</td>
-                <td>65/Male</td>
-                <td>20-12-2023</td>
-                <td>1455</td>
-                <td>Chest Pain</td>
-                <td>28.67 N-77.06 E</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Amit J.</td>
-                <td>919988776655</td>
-                <td>65/Male</td>
-                <td>20-12-2023</td>
-                <td>1455</td>
-                <td>Chest Pain</td>
-                <td>28.67 N-77.06E</td>
-              </tr> */}
+
             </tbody>
+
           </table>
+          <PaginationComponent />
         </div>
         <div className='graph common-border'>
-          <h2 className='text-center'>Turn Around Time</h2>
-               </div>
+          <h2 className='text-center pt-1 turn-around'>Turn Around Time</h2>
+          <PieChartWithCenterLabel />
+        </div>
       </div>
 
 
@@ -302,13 +258,13 @@ const HomeComponent = () => {
               return (
                 <tr key={data.sNo}>
                   <td className='td-padding'>1</td>
-                  <td>AMBU Bag (Adult)</td>
-                  <td>1</td>
-                  <td>IN-33646</td>
-                  <td>10-11-2023</td>
-                  <td ><Link className='text-decoration-none'>view</Link></td>
-                  <td className='text-success'>Satisfactory</td>
-                  <td>Sandeep C</td>
+                  <td className='td-padding'>AMBU Bag (Adult)</td>
+                  <td className='td-padding'>1</td>
+                  <td className='td-padding'>IN-33646</td>
+                  <td className='td-padding'>10-11-2023</td>
+                  <td ><Link className='text-decoration-none td-padding'>view</Link></td>
+                  <td className='text-success td-padding'>Satisfactory</td>
+                  <td className='td-padding'>Sandeep C</td>
                 </tr>
               )
             })}
