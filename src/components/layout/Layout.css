@@ -18,6 +18,13 @@
     }
   }
 
+  .user-img {
+    width: 46.512px;
+    height: 46.512px;
+    img {
+      width: 100%;
+    }
+  }
   .sidebar {
     width: 175px;
     /* border: 1px solid black; */

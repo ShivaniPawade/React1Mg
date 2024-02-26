@@ -7,9 +7,9 @@ import { Routes, Route , Outlet} from "react-router-dom";
 import HomeCards from "./components/dashboard/Home/HomeCards";
 import Layout from "./components/layout/Layout";
 import HomeComponent from "./components/dashboard/Home/HomeComponent";
-import MapComponent from "./components/maps/MapComponent";
-import MapComponent2 from "./components/maps/MapComponent2";
-import MapComponent3 from "./components/maps/MapComponent3";
+// import MapComponent from "./components/maps/MapComponent";
+// import MapComponent2 from "./components/maps/MapComponent2";
+// import MapComponent3 from "./components/maps/MapComponent3";
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           {/* Child routes rendered inside the Outlet */}
           {/* <Route path="/1MG Dashboard" element={<HomeComponent />} /> */}
           {/* <Route path="/map-live-view" element={<MapComponent2/>} /> */}
-          <Route path="/map-live-view" element={<MapComponent3/>} />
+          {/* <Route path="/map-live-view" element={<MapComponent3/>} /> */}
         
         </Route>
       </Routes>
