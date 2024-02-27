@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import { ambulanceImage, call, callRequest, mapview, callDispatched, callDeclined, callCompleted } from '../../../assets'
 import NavbarCards from '../../layout/NavbarCards'
 import { Link } from 'react-router-dom'
-import PaginationComponent from '../../commonComponents/Pagination'
+import PaginationComponent from '../../commonComponents/DoubleArrowPagination'
 import PieChartWithCenterLabel from '../../commonComponents/Chart'
+import Greetings from '../../commonComponents/Greetings'
+import RecentNews from '../../commonComponents/RecentNews'
+import NormalPagination from '../../commonComponents/NormalPagination'
 
 const HomeComponent = () => {
   const [userData, setuserData] = useState([
@@ -153,23 +156,8 @@ const HomeComponent = () => {
 
       {/* ----------------  greeting start  ---------------- */}
       <div className="d-flex gap-4 mt-3">
-        <div className="map-view common-border d-flex">
-          <div>
-            <h2 className="common-heading greeting-color mb-0 pt-4">Greetings</h2>
-            <h3 className="common-heading ">Sandeep Krishna</h3>
-            <p className="greeting-information">Lorem ipsum dolor sit amet consectetur. Mi tristique quis faucibus nulla iaculis sed molestie. Nulla dui in eget non fusce tortor pellentesque. Est posuere cursus eleifend purus nibh ac. Amet aliquet sapien senectus tempor vulputate urna et mus.</p>
-          </div>
-          <img src={ambulanceImage} alt="image"></img>
-        </div>
-        <div className="recent-news">
-          <div className="recent-background">
-            <h2 className="recent-title pt-2">Recent NEWS</h2>
-            <p className="recent-information pt-4">In view of the recent surge in Covid-19 cases in Kerala, Delhi, Goa, Gujarat
-              and Karnataka, Union health minister Mansukh Mandaviya on Wednesday chaired a high-level meeting with top officials and chief health secretaries.</p>
-            <Link className="recent-information text-decoration-none ">Read More... </Link>
-          </div>
-
-        </div>
+        <Greetings />
+        <RecentNews />
       </div>
       {/* ------------------  greeting end ------------------ */}
 
@@ -271,6 +259,9 @@ const HomeComponent = () => {
 
           </tbody>
         </table>
+        <div className='d-flex justify-content-end pt-5 pb-2'>
+        <NormalPagination />
+        </div>
       </div>
 
     </div>

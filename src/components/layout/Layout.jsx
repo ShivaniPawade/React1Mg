@@ -18,9 +18,11 @@ const formattedString = path.replace(/-/g, ' ');
       {/* ---------------  sidebar end  ------------- */}
 
       <div className="w-100 ps-3 ">
-        <div className="d-flex justify-content-between ">
+        <div className="d-flex justify-content-between mb-3 ">
           <h1 className="link-heading">{formattedString}</h1>
-          <img src={user} alt="img"></img>
+          <div className="user-img">
+          <img  src={user} alt="img"></img>
+          </div>
         </div>
         {/* ---------------- blank page ------------ */}
       {children}
