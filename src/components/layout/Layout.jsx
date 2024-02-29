@@ -28,8 +28,6 @@ const formattedString = path.replace(/-/g, ' ');
       {children}
       </div>
     </div>
-
-
   );
 };
 
