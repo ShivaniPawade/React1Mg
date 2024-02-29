@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.common-border {
+  border-radius: 10.944px;
+  background: #fff;
+  box-shadow: 0px 0px 16.142px 1.824px rgba(0, 0, 0, 0.09);
+}
+.map-view {
+  padding-inline: 1.2rem;
+}
+/* ----- cards  -------- */
+.cards {
+  justify-content: center;
+  align-items: center;
+  .icon-background {
+    border-radius: 5.472px;
+    background-color: #ef5820;
+    width: 32.832px;
+    height: 32.832px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .call-type {
+    color: #6d6d6d;
+    font-family: Poppins;
+    font-size: 12.16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.486px;
+  }
+  .price {
+    color: #0f8805;
+    font-family: Poppins;
+    font-size: 9.12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.365px;
+  }
+  .number {
+    color: #ef5820;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 30.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.216px;
+  }
+}
+/* ---------- greeting  --------- */
+ .greeting-color {
+    color: #0f8805;
+  }
+  .greeting-information {
+    color: #6d6d6d;
+    font-family: Poppins;
+    font-size: 10.944px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.504px; /* 141.667% */
+    letter-spacing: -0.438px;
+  }
+  .recent-news {
+    width: 438.413px;
+height: 202.272px;
+    border-radius: 10.944px;
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 16.142px 1.824px rgba(0, 0, 0, 0.09);
+    padding: 1rem;
+  }
+  .recent-background {
+    background-image: url("../../assets/images/recent-news.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    border-radius: 10.944px;
+  }
+  .recent-title {
+    color: #ef5820;
+    font-family: Poppins;
+    font-size: 16.416px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15.504px; /* 94.444% */
+    letter-spacing: -0.657px;
+  }
+  .recent-information {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 10.944px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.504px; /* 141.667% */
+    letter-spacing: -0.438px;
+  }
+
+  /* ------ veiw-attendence  ------- */
+  .veiw-attendence{
+      color: #EF5820;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 10.976px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.439px;
+  }
+/* -------- calender  ----- */
+.calender {
+  width: 634.256px; 
+  height: 442.96px;
+}
