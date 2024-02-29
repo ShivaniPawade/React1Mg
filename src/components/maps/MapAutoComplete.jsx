@@ -14,7 +14,7 @@ import {
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
 
-export default function MapComponent3() {
+export default function MapAutoComplete() {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyCCeRvK-UDV4g__w4tx3HXyrTQ92V6emMY",
     libraries: ["places"],

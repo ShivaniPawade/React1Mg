@@ -1,0 +1,6 @@
+.map{
+    height:70vh;
+}
+.map:first-child{
+    height: 100% !important;
+}

@@ -12,7 +12,7 @@ const Sidebar = () => {
           <div className="icons-border">
             <img className="icons " src={dashboard} alt="icon"></img>
           </div>
-          <Link className="text-decoration-none"> <h2 className="sidebar-links pt-2 ">Dashboard</h2></Link>
+          <Link className="text-decoration-none" to={"/"}> <h2 className="sidebar-links pt-2 ">Dashboard</h2></Link>
         </div>
         <div className="d-flex align-items-center mb-3">
           <div className="icons-border">
@@ -30,7 +30,7 @@ const Sidebar = () => {
           <div className="icons-border">
             <img className="icons" src={account} alt="icon"></img>
           </div>
-          <Link className="text-decoration-none"><h2 className="sidebar-links pt-2">Employees</h2></Link>
+          <Link className="text-decoration-none" to={"/employee"}><h2 className="sidebar-links pt-2">Employees</h2></Link>
         </div>
         <div className="d-flex align-items-center mb-3">
           <div className="icons-border">
