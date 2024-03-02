@@ -52,16 +52,14 @@ const MapComponent4 = () => {
         </div> */}
       </div>
 
-
-
-
       <Map defaultCenter={[50.879, 4.6997]} defaultZoom={20}>
         {data.map((map, index) => {
           return (
             <Marker
-              key={index}
               width={50}
               anchor={[map.latitude, map.longitude]}
+              color={"red"}
+              onClick={() => alert("hue + 20")}
             >
               <img src={ambulancelocate} alt="" />
             </Marker>
