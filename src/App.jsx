@@ -9,6 +9,7 @@ import Layout from "./components/layout/Layout";
 import HomeComponent from "./components/dashboard/Home/HomeComponent";
 import MapComponent4 from "./components/maps/MapComponent4";
 import Employees from "./components/hrManagement/Employees";
+import AmbulanceInformation from "./components/maps/AmbulanceInformation";
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path="/1MG Dashboard" element={<HomeComponent />} />
           <Route path="/map-live-view" element={<MapComponent4/>} />
           <Route path="/employee" element={<Employees/>} />
+          <Route path="/ambulance-information" element={<AmbulanceInformation/>} />
+          
         </Route>
       </Routes>
     </>

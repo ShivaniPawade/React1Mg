@@ -65,13 +65,14 @@ const PlacesAutocomplete = ({ setSelected }) => {
   };
 
   return (
-    <Combobox onSelect={handleSelect}>
+    <div >
+  <Combobox onSelect={handleSelect}>
       <ComboboxInput
         value={value}
         onChange={(e) => setValue(e.target.value)}
         disabled={!ready}
         className="combobox-input"
-        placeholder="Search an address"
+        placeholder="Search - Names, Vehicle, Location "
       />
       <ComboboxPopover>
         <ComboboxList>
@@ -82,5 +83,7 @@ const PlacesAutocomplete = ({ setSelected }) => {
         </ComboboxList>
       </ComboboxPopover>
     </Combobox>
+    </div>
+  
   );
 };

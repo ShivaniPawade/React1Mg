@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Map, Marker } from "pigeon-maps";
-import { ambulancelocate } from "../../assets";
+import { Location, ambulancelocate, search } from "../../assets";
 import "./map.css";
 import MapAutoComplete from "./MapAutoComplete";
+import AmbulanceInformation from "./AmbulanceInformation";
 
 const MapComponent4 = () => {
   const [data, setdata] = useState([
@@ -33,10 +34,27 @@ const MapComponent4 = () => {
     },
   ]);
   return (
-    <div className="map">
-      <div>
-        <MapAutoComplete />
+    <div className="map common-border position-relative">
+      <div className="d-flex justify-content-between">
+        <div className="display-search d-flex justify-content-around align-items-center px-3">
+          <img src={Location}></img>
+          <h2 className="sector mb-0">Sector 17, Gurgaon</h2>
+          <h2 className="sector green mb-0">28.47 N - 77.04 E</h2>
+        </div>
+        <div className=" map-auto-complete">
+          <div>
+            {/* <img src={search}></img> */}
+            <MapAutoComplete />
+          </div>
+        </div>
+        {/* <div >
+          <AmbulanceInformation />
+        </div> */}
       </div>
+
+
+
+
       <Map defaultCenter={[50.879, 4.6997]} defaultZoom={20}>
         {data.map((map, index) => {
           return (

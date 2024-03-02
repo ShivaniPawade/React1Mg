@@ -1,6 +1,207 @@
-.map{
-    height:70vh;
+.common-border {
+  border-radius: 10.944px;
+  background: #fff;
+  box-shadow: 0px 0px 16.142px 1.824px rgba(0, 0, 0, 0.09);
 }
-.map:first-child{
-    height: 100% !important;
+/* --------  map  ------- */
+.map {
+  height: 70vh;
+  padding: 1rem;
+  position: relative;
+}
+.map:first-child {
+  height: 100% !important;
+}
+.map-auto-complete {
+  position: absolute;
+  z-index: 9999;
+  top: 10%;
+  right: 5%;
+}
+.display-search {
+  position: absolute;
+  z-index: 9999;
+  top: 10%;
+  left: 5%;
+  width: 323.792px;
+  height: 42.336px;
+  border-radius: 29.165px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0px 3.763px 6.115px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1.8816001415252686px);
+}
+.sector {
+  color: #9d9d9d;
+  font-family: Poppins;
+  font-size: 13.548px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.542px;
+}
+.green {
+  color: #0f8805;
+  border-left: 2px solid #9d9d9d;
+  padding-left: 1rem;
+}
+/* ------- ambulance-information  ------- */
+
+.ambulance-information {
+  position: absolute;
+  z-index: 999;
+  right: 2%;
+  width: 337.904px;
+  background-color: #fff;
+  /* height: 538.608px;  */
+  /* border: 1px solid black; */
+}
+.map-location-background {
+  background: #ef5820;
+  filter: drop-shadow(0px 3.136px 3.842px rgba(0, 0, 0, 0.22));
+  padding: 1rem 1rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.logo-background {
+  width: 50.176px;
+  height: 50.176px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-heading1 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14.112px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.564px;
+}
+.location-heading2 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 12.544px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.502px;
+}
+.map-heading {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 15.68px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.627px;
+}
+.vehicle {
+  color: #ef5820;
+  font-family: Poppins;
+  font-size: 10.976px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.439px;
+}
+.color-change {
+  color: #6d6d6d;
+}
+.staff {
+  /* width: 302.624px; */
+  /* height: 177.184px; */
+  border-radius: 7.84px;
+  background: #fff;
+  box-shadow: 0px 0px 10.427px 2.352px rgba(0, 0, 0, 0.25);
+}
+.staff-details {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 12.544px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.502px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.staff-info {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 12.544px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.502px;
+}
+.staff-profession {
+  color: #6d6d6d;
+  font-family: Poppins;
+  font-size: 10.976px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.439px;
+}
+/* .staff-img {
+  width: 36.848px;
+  height: 36.848px;
+  border-radius: 36.848px;
+  border: 0.784px solid #ef5820;
+} */
+
+/* --------------------------- */
+.equipment-list {
+  /* width: 298.704px; */
+  /* height: 192.864px; */
+  border-radius: 7.84px;
+  background: #fff;
+  box-shadow: 0px 0px 10.427px 2.352px rgba(0, 0, 0, 0.25);
+}
+.equipment-heading {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 12.544px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.502px;
+}
+.view-all {
+  color: #ef5820;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 9.408px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.376px;
+}
+.etable-heading{
+  color: #1E1E1E;
+  font-family: Poppins;
+  font-size: 9.408px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.376px;
+  padding:0.2rem 0.99rem;
+}
+table,th,td{
+  border: 1.568px solid #CFCFCF;
+  border-collapse: collapse;
+}
+.td-color{
+  color: #6D6D6D;
+}
+th:first-child {
+  border-top-left-radius: 10.5px;
+}
+th:last-child {
+  border-top-right-radius: 10.5px;
 }
