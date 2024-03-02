@@ -63,6 +63,7 @@ const PlacesAutocomplete = ({ setSelected }) => {
     const { lat, lng } = await getLatLng(results[0]);
     console.log(lat, lng);
     setSelected({ lat, lng });
+    console.log(value)
   };
 
   return (
@@ -79,7 +80,7 @@ const PlacesAutocomplete = ({ setSelected }) => {
           <ComboboxList>
             {status === "OK" &&
               data.map(({ place_id, description }) => (
-                <ComboboxOption key={place_id} value={description} />
+                <ComboboxOption key={place_id} value={description}/>
               ))}
           </ComboboxList>
         </ComboboxPopover>
