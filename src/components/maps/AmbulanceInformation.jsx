@@ -148,7 +148,6 @@ const AmbulanceInformation = (props) => {
             </tr>
           </thead>
           <tbody>
-<<<<<<< HEAD
             {
               data.map((item) => {
                 return (
@@ -161,20 +160,6 @@ const AmbulanceInformation = (props) => {
 
               })
             }
-=======
-            {data.map((item) => {
-              return (
-                <tr>
-                  <td className="etable-heading td-color">
-                    {item.srNO}
-                    {item.items}
-                  </td>
-                  <td className="etable-heading td-color">{item.quantity}</td>
-                  <td className="etable-heading td-color">{item.status}</td>
-                </tr>
-              );
-            })}
->>>>>>> 27f93f882a228d33d1b39e272ce2d83359eebacf
           </tbody>
         </table>
       </div>
