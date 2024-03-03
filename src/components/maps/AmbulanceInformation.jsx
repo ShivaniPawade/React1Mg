@@ -141,7 +141,7 @@ const AmbulanceInformation = () => {
               data.map((item) => {
                 return (
                   <tr>
-                    <td className='etable-heading td-color'>{item.srNO}{item.items}</td>
+                    <td className='etable-heading td-color'>{item.srNO}.{item.items}</td>
                     <td className='etable-heading td-color'>{item.quantity}</td>
                     <td className='etable-heading td-color'>{item.status}</td>
                   </tr>
