@@ -123,7 +123,7 @@
 .datePickerInput {
   padding: 2px 10px; /* Ensure space for the arrow */
   border-radius: 7px;
-  border: 1.254px solid #9D9D9D;
+  border: 1.254px solid #9d9d9d;
 }
 
 .datePickerInput::-webkit-calendar-picker-indicator {
@@ -135,4 +135,67 @@
   top: 50%;
   right: 5px; /* Adjust as needed */
   transform: translateY(-50%);
+}
+/* ------------------------------------- */
+.mark-attendance {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 17.248px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.994px; /* 92.727% */
+  letter-spacing: -0.69px;
+}
+.select-images {
+  color: #bebebe;
+  font-family: Poppins;
+  font-size: 6.272px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.994px; /* 255% */
+  letter-spacing: -0.251px;
+  text-align: center;
+}
+.image-side {
+  color: #626262;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 6.272px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.994px; /* 255% */
+  letter-spacing: -0.251px;
+}
+.tiplus {
+  color: #fff;
+  border-radius: 3.92px;
+  border: 0.784px solid #9d9d9d;
+  background: #d9d9d9;
+  width: 23.52px;
+  height: 23.52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock{
+  color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 14.936px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.597px;
+}
+.upload{
+  color: #3E3E3E;
+text-align: center;
+font-family: Poppins;
+font-size: 11.949px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.478px;
+border-radius: 6.272px;
+padding: 0.1rem 0.3rem;
 }

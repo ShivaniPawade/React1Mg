@@ -27,4 +27,5 @@ import Close from './images/close.svg'
 import Star from './images/star.svg'
 import Staff from './images/staff.svg'
 import MapAmbulance from './images/map-ambulance.png'
-export { logo,ambulancelocate, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted,search,Location,LogoHanuman,FluentLocation,Share,Close,MapAmbulance,Star,Staff }
+import Group from './images/group6.png'
+export {logo,ambulancelocate, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted,search,Location,LogoHanuman,FluentLocation,Share,Close,MapAmbulance,Star,Staff,Group}

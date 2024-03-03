@@ -30,8 +30,8 @@ function App() {
           }
         >
           {/* Child routes rendered inside the Outlet */}
-          <Route path="/" element={<HomeComponent />} />
-          <Route path="/1MG Dashboard" element={<HomeComponent />} />
+          /* <Route path="/" element={<HomeComponent />} />
+          <Route path="/1MG Dashboard" element={<HomeComponent />} /> 
           {/* <Route path="/map-live-view" element={<MapComponent/>} /> */}
           <Route path="/map-live-view" element={<CommonMaps/>} />
           <Route path="/employeedashboard" element={<Employees/>} />
