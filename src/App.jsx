@@ -10,6 +10,10 @@ import HomeComponent from "./components/dashboard/Home/HomeComponent";
 import MapComponent4 from "./components/maps/MapComponent4";
 import Employees from "./components/hrManagement/Employees";
 import AmbulanceInformation from "./components/maps/AmbulanceInformation";
+import MapComponent3 from "./components/maps/MapComponent3";
+import MapComponent2 from "./components/maps/MapComponent2";
+import MapComponent from "./components/maps/MapComponent";
+import CommonMaps from "./components/maps/CommonMaps";
 
 
 function App() {
@@ -28,8 +32,9 @@ function App() {
           {/* Child routes rendered inside the Outlet */}
           <Route path="/" element={<HomeComponent />} />
           <Route path="/1MG Dashboard" element={<HomeComponent />} />
-          <Route path="/map-live-view" element={<MapComponent4/>} />
-          <Route path="/employee" element={<Employees/>} />
+          {/* <Route path="/map-live-view" element={<MapComponent/>} /> */}
+          <Route path="/map-live-view" element={<CommonMaps/>} />
+          <Route path="/employeedashboard" element={<Employees/>} />
           <Route path="/ambulance-information" element={<AmbulanceInformation/>} />
           
         </Route>

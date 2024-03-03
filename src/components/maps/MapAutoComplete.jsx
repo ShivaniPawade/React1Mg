@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import usePlacesAutocomplete, {
@@ -13,7 +12,8 @@ import {
   ComboboxOption,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
-
+import "./map.css";
+import { CiSearch } from "react-icons/ci";
 export default function MapAutoComplete() {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyCCeRvK-UDV4g__w4tx3HXyrTQ92V6emMY",
@@ -27,10 +27,11 @@ export default function MapAutoComplete() {
 function Map() {
   const center = useMemo(() => ({ lat: 43.45, lng: -80.49 }), []);
   const [selected, setSelected] = useState(null);
-
+  console.log(selected)
   return (
     <>
       <div className="places-container">
+        <CiSearch />
         <PlacesAutocomplete setSelected={setSelected} />
       </div>
 
@@ -60,30 +61,30 @@ const PlacesAutocomplete = ({ setSelected }) => {
 
     const results = await getGeocode({ address });
     const { lat, lng } = await getLatLng(results[0]);
-    console.log(lat, lng)
+    console.log(lat, lng);
     setSelected({ lat, lng });
+    console.log(value)
   };
 
   return (
-    <div >
-  <Combobox onSelect={handleSelect}>
-      <ComboboxInput
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        disabled={!ready}
-        className="combobox-input"
-        placeholder="Search - Names, Vehicle, Location "
-      />
-      <ComboboxPopover>
-        <ComboboxList>
-          {status === "OK" &&
-            data.map(({ place_id, description }) => (
-              <ComboboxOption key={place_id} value={description} />
-            ))}
-        </ComboboxList>
-      </ComboboxPopover>
-    </Combobox>
+    <div style={{flexGrow:1}}>
+      <Combobox onSelect={handleSelect}>
+        <ComboboxInput
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          disabled={!ready}
+          className="combobox-input"
+          placeholder="Search - Names, Vehicle, Location "
+        />
+        <ComboboxPopover>
+          <ComboboxList>
+            {status === "OK" &&
+              data.map(({ place_id, description }) => (
+                <ComboboxOption key={place_id} value={description}/>
+              ))}
+          </ComboboxList>
+        </ComboboxPopover>
+      </Combobox>
     </div>
-  
   );
 };

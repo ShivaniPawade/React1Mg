@@ -5,7 +5,7 @@
 }
 /* --------  map  ------- */
 .map {
-  height: 70vh;
+  height: 80vh;
   padding: 1rem;
   position: relative;
 }
@@ -16,7 +16,7 @@
   position: absolute;
   z-index: 9999;
   top: 10%;
-  right: 5%;
+  right: 10%;
 }
 .display-search {
   position: absolute;
@@ -47,10 +47,10 @@
 /* ------- ambulance-information  ------- */
 
 .ambulance-information {
-  position: absolute;
-  z-index: 999;
-  right: 2%;
-  width: 337.904px;
+  /* position: absolute; */
+  /* z-index: 999; */
+  /* right: 2%; */
+  width: 30%;
   background-color: #fff;
   /* height: 538.608px;  */
   /* border: 1px solid black; */
@@ -182,26 +182,55 @@
   line-height: normal;
   letter-spacing: -0.376px;
 }
-.etable-heading{
-  color: #1E1E1E;
+.etable-heading {
+  color: #1e1e1e;
   font-family: Poppins;
   font-size: 9.408px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.376px;
-  padding:0.2rem 0.99rem;
+  padding: 0.2rem 0.99rem;
 }
-table,th,td{
-  border: 1.568px solid #CFCFCF;
+table,
+th,
+td {
+  border: 1.568px solid #cfcfcf;
   border-collapse: collapse;
 }
-.td-color{
-  color: #6D6D6D;
+.td-color {
+  color: #6d6d6d;
 }
 th:first-child {
   border-top-left-radius: 10.5px;
 }
 th:last-child {
   border-top-right-radius: 10.5px;
+}
+
+.places-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: white;
+  border-radius: 24px;
+  width: 128%;
+  gap: 6px;
+  /* padding: 2px; */
+  border-radius: 24.304px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0px 3.136px 5.096px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1.568000078201294px);
+  padding-left: 20px;
+}
+
+.places-container .combobox-input {
+  padding: 5px;
+  border: none;
+  width: 100%;
+  border-radius: 24.304px;
+}
+
+.places-container .combobox-input:focus{
+  outline: none;  
 }

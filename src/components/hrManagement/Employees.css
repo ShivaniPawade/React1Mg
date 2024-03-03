@@ -113,6 +113,26 @@
 }
 /* -------- calender  ----- */
 .calender {
-  width: 634.256px;
+  width: 135% !important;
   height: 442.96px;
+}
+.datePickerContainer {
+  position: relative;
+}
+
+.datePickerInput {
+  padding: 2px 10px; /* Ensure space for the arrow */
+  border-radius: 7px;
+  border: 1.254px solid #9D9D9D;
+}
+
+.datePickerInput::-webkit-calendar-picker-indicator {
+  display: none; /* Hide the default calendar icon */
+}
+
+.arrowDown {
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Adjust as needed */
+  transform: translateY(-50%);
 }
