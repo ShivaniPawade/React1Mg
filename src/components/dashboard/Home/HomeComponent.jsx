@@ -166,7 +166,7 @@ const HomeComponent = () => {
         <div>
           <h2 className="common-heading pt-4">Map View</h2>
           <p className="map-information">Lorem ipsum dolor sit amet consectetur. Mi tristique quis faucibus nulla iaculis sed molestie. Nulla dui in eget non fusce tortor pellentesque. Est posuere cursus eleifend purus nibh ac. Amet aliquet sapien senectus tempor vulputate urna et mus.</p>
-          <Link className="map-link ">View Live Map</Link>
+          <Link className="map-link " to={"/map-live-view"}>View Live Map</Link>
         </div>
         <img src={mapview} alt="image"></img>
       </div>

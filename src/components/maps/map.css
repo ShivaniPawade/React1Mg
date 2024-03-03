@@ -47,10 +47,10 @@
 /* ------- ambulance-information  ------- */
 
 .ambulance-information {
-  position: absolute;
-  z-index: 999;
-  right: 2%;
-  width: 337.904px;
+  /* position: absolute; */
+  /* z-index: 999; */
+  /* right: 2%; */
+  width: 30%;
   background-color: #fff;
   /* height: 538.608px;  */
   /* border: 1px solid black; */

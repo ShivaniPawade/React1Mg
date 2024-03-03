@@ -34,7 +34,7 @@ function App() {
           <Route path="/1MG Dashboard" element={<HomeComponent />} />
           {/* <Route path="/map-live-view" element={<MapComponent/>} /> */}
           <Route path="/map-live-view" element={<CommonMaps/>} />
-          <Route path="/employee" element={<Employees/>} />
+          <Route path="/employeedashboard" element={<Employees/>} />
           <Route path="/ambulance-information" element={<AmbulanceInformation/>} />
           
         </Route>
