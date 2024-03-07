@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./map.css";
+import "./Map.css";
 import {
   Close,
   FluentLocation,

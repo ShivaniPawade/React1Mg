@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Map, Marker } from "pigeon-maps";
 import { Location, ambulancelocate, search } from "../../assets";
-import "./map.css";
+import "./Map.css";
 import MapAutoComplete from "./MapAutoComplete";
 import AmbulanceInformation from "./AmbulanceInformation";
 
