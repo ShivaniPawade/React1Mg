@@ -192,11 +192,11 @@
   letter-spacing: -0.376px;
   padding: 0.2rem 0.99rem;
 }
-table,
-th,
-td {
-  border: 1.568px solid #cfcfcf;
-  border-collapse: collapse;
+table
+{
+  width: 100%;
+  /* border: 1.568px solid #cfcfcf; */
+  /* border-collapse: collapse; */
 }
 .td-color {
   color: #6d6d6d;

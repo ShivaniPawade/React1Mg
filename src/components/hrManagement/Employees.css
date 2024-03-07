@@ -177,25 +177,124 @@
   justify-content: center;
   align-items: center;
 }
-.clock{
-  color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 14.936px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.597px;
+.clock {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14.936px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.597px;
 }
-.upload{
-  color: #3E3E3E;
-text-align: center;
-font-family: Poppins;
-font-size: 11.949px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.478px;
-border-radius: 6.272px;
-padding: 0.1rem 0.3rem;
+.upload {
+  color: #3e3e3e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 11.949px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.478px;
+  border-radius: 6.272px;
+  padding: 0.1rem 0.3rem;
+}
+
+/* ------------ hr management ----------- */
+.employee-list {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 23.972px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.959px;
+}
+.button-text {
+  border-radius: 7.84px;
+  background: #fff;
+  box-shadow: 0px 0px 16.319px 1.844px rgba(0, 0, 0, 0.15);
+  color: #0f8805;
+  font-family: Poppins;
+  font-size: 12.544px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.502px;
+  border: none;
+}
+.add-employee{
+  padding: 0.7rem 1.25rem;
+  background: #0F8805;
+  color:#fff;
+}
+/* ------- table ------- */
+table {
+  width: 100%;
+  thead {
+    background-color: #eff7df;
+  }
+  thead tr:hover {
+    background-color: #eff7df;
+  }
+  tr:hover {
+    background-color: #fce2c9;
+  }
+  th,
+  td {
+    text-align: center;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14.774px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    border-bottom: 1.751px solid #e8e8e8;
+  }
+  th {
+    padding: 0.5rem 1rem;
+    color: #4b4b4b;
+    font-weight: 700;
+  }
+  th:first-child {
+    border-top-left-radius: 10.5px;
+  }
+  th:last-child {
+    border-top-right-radius: 10.5px;
+  }
+  td {
+    color: #6d6d6d;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+  td:first-child {
+    border-left: 1.751px solid #e8e8e8;
+  }
+  td:last-child {
+    border-right: 1.751px solid #e8e8e8;
+    padding: 0rem 1rem;
+  }
+}
+.eye{
+  color: #3858FF;
+  border: 1px solid #3858FF;
+  border-radius: 50%;
+  padding: 1px 3px;
+}
+.edit{
+  color: #0F8805;
+  border: 1px solid #0F8805;
+  padding: 1px 3px;
+  border-radius: 50%;
+ 
+}
+.delete{
+  background-color: #FF4646;;
+  border-radius: 50%;
+  border: none; 
+  width: 20px;
+  padding: 2px 3px;
+  .img-delete{
+    width: 100%;
+  }
 }

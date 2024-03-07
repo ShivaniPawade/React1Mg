@@ -220,6 +220,7 @@
     letter-spacing: -0.657px;
   }
   table {
+    width: 100%;
     thead {
       background-color: #eff7df;
     }
@@ -229,21 +230,28 @@
     tr:hover {
       background-color: #fce2c9;
     }
-    th,
-    td {
-      text-align: center;
+
+    th {
+      /* padding: 0.5rem 2rem; */
+      color: #4b4b4b;
       text-align: center;
       font-family: Poppins;
-      font-size: 10.506px;
+      font-size: 14.774px;
       font-style: normal;
-      line-height: normal;
-      letter-spacing: -0.42px;
-      border-bottom: 1.751px solid #e8e8e8;
-    }
-    th {
-      padding: 0.5rem 1rem;
-      color: #4b4b4b;
       font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.591px;
+    }
+    td {
+      /* padding: 0.5rem 0; */
+      color: #6d6d6d;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 14.774px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.591px;
     }
     th:first-child {
       border-top-left-radius: 10.5px;
@@ -284,26 +292,24 @@
     /* width: 1061.568px; */
     /* height: 463.296px; */
   }
-  .th-padding {
-    padding: 0.5rem 2rem;
+  .th-details {
     color: #4b4b4b;
     text-align: center;
     font-family: Poppins;
-    font-size: 14.774px;
+    font-size: 10.506px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: -0.591px;
+    letter-spacing: -0.42px;
   }
-  .td-padding {
-    padding: 0.5rem 0;
+  .td-details {
     color: #6d6d6d;
     text-align: center;
     font-family: Poppins;
-    font-size: 14.774px;
+    font-size: 10.506px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -0.591px;
+    letter-spacing: -0.42px;
   }
 }

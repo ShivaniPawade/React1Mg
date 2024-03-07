@@ -144,7 +144,7 @@ const HomeComponent = () => {
   return (
     <div className="dashboard ">
 
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between py-1">
         {
           cards.map((item) => {
             return (<div className="">
@@ -182,28 +182,28 @@ const HomeComponent = () => {
           <table>
             <thead>
               <tr>
-                <th >S. No</th>
-                <th>Name</th>
-                <th>Mobile No.</th>
-                <th>Age/Gender</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Emergency Type</th>
-                <th>Lat/Long</th>
+                <th className='th-details'>S. No</th>
+                <th className='th-details'>Name</th>
+                <th className='th-details'>Mobile No.</th>
+                <th className='th-details'>Age/Gender</th>
+                <th className='th-details'>Date</th>
+                <th className='th-details'>Time</th>
+                <th className='th-details'>Emergency Type</th>
+                <th className='th-details'> Lat/Long</th>
               </tr>
             </thead>
             <tbody>
               {userData.map((user) => {
                 return (
                   <tr key={user.srNo}>
-                    <td className='sr-border'>1</td>
-                    <td>Amit J.</td>
-                    <td>919988776655</td>
-                    <td>65/Male</td>
-                    <td>20-12-2023</td>
-                    <td>1455</td>
-                    <td>Chest Pain</td>
-                    <td>28.67 N-77.06 E</td>
+                    <td className='sr-border td-details'>1</td>
+                    <td className='td-details'>Amit J.</td>
+                    <td className='td-details'>919988776655</td>
+                    <td className='td-details'>65/Male</td>
+                    <td className='td-details'>20-12-2023</td>
+                    <td className='td-details'>1455</td>
+                    <td className='td-details'>Chest Pain</td>
+                    <td className='td-details'>28.67 N-77.06 E</td>
                   </tr>
                 )
               })}
@@ -231,28 +231,28 @@ const HomeComponent = () => {
         <table>
           <thead>
             <tr >
-              <th className='th-padding'>S. No</th>
-              <th className='th-padding'>Item Name</th>
-              <th className='th-padding'>Quantity</th>
-              <th className='th-padding'>Inspection No.</th>
-              <th className='th-padding'>Inspection Date</th>
-              <th className='th-padding'>Images</th>
-              <th className='th-padding'>Status</th>
-              <th className='th-padding'>Inspector</th>
+              <th >S. No</th>
+              <th >Item Name</th>
+              <th >Quantity</th>
+              <th >Inspection No.</th>
+              <th >Inspection Date</th>
+              <th >Images</th>
+              <th >Status</th>
+              <th >Inspector</th>
             </tr>
           </thead>
           <tbody>
             {auditData.map((data) => {
               return (
                 <tr key={data.sNo}>
-                  <td className='td-padding'>1</td>
-                  <td className='td-padding'>AMBU Bag (Adult)</td>
-                  <td className='td-padding'>1</td>
-                  <td className='td-padding'>IN-33646</td>
-                  <td className='td-padding'>10-11-2023</td>
-                  <td ><Link className='text-decoration-none td-padding'>view</Link></td>
-                  <td className='text-success td-padding'>Satisfactory</td>
-                  <td className='td-padding'>Sandeep C</td>
+                  <td >1</td>
+                  <td >AMBU Bag (Adult)</td>
+                  <td >1</td>
+                  <td >IN-33646</td>
+                  <td >10-11-2023</td>
+                  <td ><Link className='text-decoration-none '>view</Link></td>
+                  <td className='text-success'>Satisfactory</td>
+                  <td >Sandeep C</td>
                 </tr>
               )
             })}

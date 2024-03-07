@@ -26,6 +26,9 @@ import Share  from './images/share.svg'
 import Close from './images/close.svg'
 import Star from './images/star.svg'
 import Staff from './images/staff.svg'
+import Edit from './images/edit.svg'
+import Delete from './images/delete.svg'
+import View  from './images/view.svg'
 import MapAmbulance from './images/map-ambulance.png'
 import Group from './images/group6.png'
-export {logo,ambulancelocate, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted,search,Location,LogoHanuman,FluentLocation,Share,Close,MapAmbulance,Star,Staff,Group}
+export {logo,ambulancelocate, call, dashboard, logout, ambulance, offer, account, group,report,bell,map,user,mapview,ambulanceImage,recentNews,callRequest,callDispatched,callDeclined,callCompleted,search,Location,LogoHanuman,FluentLocation,Share,Close,MapAmbulance,Star,Staff,Group,View,Edit,Delete}
