@@ -12,7 +12,7 @@ import {
   ComboboxOption,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
-import "./Map.css";
+import "./map.css";
 import { CiSearch } from "react-icons/ci";
 export default function MapAutoComplete() {
   const { isLoaded } = useLoadScript({

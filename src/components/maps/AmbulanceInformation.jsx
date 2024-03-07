@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Map.css'
+import "./map.css";
 import {
   Close,
   FluentLocation,
@@ -149,18 +149,17 @@ const AmbulanceInformation = (props) => {
             </tr>
           </thead>
           <tbody>
-            {
-              data.map((item) => {
-                return (
-                  <tr>
-                    <td className='etable-heading td-color'>{item.srNO}.{item.items}</td>
-                    <td className='etable-heading td-color'>{item.quantity}</td>
-                    <td className='etable-heading td-color'>{item.status}</td>
-                  </tr>
-                )
-
-              })
-            }
+            {data.map((item) => {
+              return (
+                <tr>
+                  <td className="etable-heading td-color">
+                    {item.srNO}.{item.items}
+                  </td>
+                  <td className="etable-heading td-color">{item.quantity}</td>
+                  <td className="etable-heading td-color">{item.status}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
