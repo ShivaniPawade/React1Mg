@@ -3,8 +3,8 @@ import '../hrManagement/Employees.css'
 import { Delete, Edit, View, callCompleted, callDeclined, callDispatched, callRequest } from '../../assets'
 import { IoEye } from "react-icons/io5";
 import { BiEditAlt } from "react-icons/bi";
-import { RiDeleteBin5Line } from "react-icons/ri";
 import NavbarCards from '../layout/NavbarCards';
+import DownloadButton from '../commonComponents/DownloadButton';
 const HrManagement = () => {
     const [employeeData, setemployeeData] = useState([
         {
@@ -82,7 +82,7 @@ const HrManagement = () => {
                 <div className='d-flex justify-content-between align-items-center'>
                     <div className='d-flex  gap-4'>
                         <h2 className='employee-list mb-0'>Employee List</h2>
-                        <button className=' px-4 py-2 button-text'>Download CSV</button>
+                        <DownloadButton />
                     </div>
                     <button className='button-text add-employee '>Add Employee</button>
                 </div>

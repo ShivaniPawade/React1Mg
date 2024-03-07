@@ -16,6 +16,8 @@ import MapComponent from "./components/maps/MapComponent";
 import CommonMaps from "./components/maps/CommonMaps";
 import Sidebar from "./components/layout/Sidebar";
 import HrManagement from "./components/hrManagement/HrManagement";
+import Administration from "./components/Administration";
+import HrReports from "./components/reports/HrReports";
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
           <Route path="/employeedashboard" element={<Employees/>} />
           <Route path="/ambulance-information" element={<AmbulanceInformation/>} />
           <Route path="/hr-management" element={<HrManagement/>} />
+          <Route path="/administration" element={<Administration/>} />
+          <Route path="/hr-report" element={<HrReports/>} />
           
         </Route>
       </Routes>
