@@ -92,13 +92,13 @@ const Administration = () => {
                 <table className='my-3'>
                     <thead>
                         <tr>
-                            <th >S. No</th>
-                            <th >Vehicle Reg. No.</th>
-                            <th>DriverRegistration</th>
+                            <th >S.No</th>
+                            <th >Vehicle  Reg. No.</th>
+                            <th>Driver  Registration</th>
                             <th>Vehicle RC</th>
                             <th>Insurance</th>
                             <th>PUC</th>
-                            <th>Road Tax</th>
+                            <th>RoadTax</th>
                             <th>Fitness certificate</th>
                             <th>Action</th>
                         </tr>

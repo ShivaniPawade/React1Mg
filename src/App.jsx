@@ -18,6 +18,8 @@ import Sidebar from "./components/layout/Sidebar";
 import HrManagement from "./components/hrManagement/HrManagement";
 import Administration from "./components/Administration";
 import HrReports from "./components/reports/HrReports";
+import FitnessReport from "./components/reports/FitnessReport";
+import TelementryReport from "./components/reports/TelementryReport";
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
           <Route path="/hr-management" element={<HrManagement/>} />
           <Route path="/administration" element={<Administration/>} />
           <Route path="/hr-report" element={<HrReports/>} />
+          <Route path="/fitness-report" element={<FitnessReport/>} />
+          <Route path="/telementry-report" element={<TelementryReport/>} />
           
         </Route>
       </Routes>

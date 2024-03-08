@@ -5,6 +5,7 @@ import { IoEye } from "react-icons/io5";
 import { BiEditAlt } from "react-icons/bi";
 import NavbarCards from '../layout/NavbarCards';
 import DownloadButton from '../commonComponents/DownloadButton';
+import NormalPagination from '../commonComponents/NormalPagination';
 const HrManagement = () => {
     const [employeeData, setemployeeData] = useState([
         {
@@ -122,6 +123,9 @@ const HrManagement = () => {
                     </tbody>
 
                 </table>
+                <div className='me-auto'>                    
+                <NormalPagination/>
+                </div>
             </div>
         </>
     )
