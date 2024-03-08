@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import DownloadButton from '../commonComponents/DownloadButton'
 import { Link } from 'react-router-dom'
 import { ProfilePic } from '../../assets'
+import NormalPagination from '../commonComponents/NormalPagination'
 
 const FitnessReport = () => {
     const [fitnessReport, setfitnessReport] = useState([

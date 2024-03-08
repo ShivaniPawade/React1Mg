@@ -3,6 +3,7 @@ import DownloadButton from '../commonComponents/DownloadButton'
 import './Reports.css'
 import { Link } from 'react-router-dom'
 import { ProfilePic } from '../../assets'
+import NormalPagination from '../commonComponents/NormalPagination'
 const HrReports = () => {
     const [driverList ,setdriverList] = useState([
         {sno:1,imageUrl:ProfilePic,driverName:'Aditya V.',contact:'+918799665484',photo:'view',attendence:'view',clockIn:'09:00',clockOut:'Clock Out'},

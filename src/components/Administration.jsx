@@ -6,6 +6,7 @@ import { Delete, callCompleted, callDeclined, callDispatched, callRequest } from
 import NavbarCards from './layout/NavbarCards';
 import DownloadButton from './commonComponents/DownloadButton';
 import { Link } from 'react-router-dom';
+import NormalPagination from './commonComponents/NormalPagination';
 const Administration = () => {
     const [administration, setadministration] = useState([
         {
@@ -124,6 +125,9 @@ const Administration = () => {
                     </tbody>
 
                 </table>
+                <div className=''>                    
+                <NormalPagination/>
+                </div>
             </div>
         </>
     )

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DownloadButton from '../commonComponents/DownloadButton'
 import { Link } from 'react-router-dom'
+import NormalPagination from '../commonComponents/NormalPagination'
 
 const TelementryReport = () => {
     const [telementry, settelementry] = useState([
