@@ -123,7 +123,7 @@ const HrManagement = () => {
                     </tbody>
 
                 </table>
-                <div className='me-auto'>                    
+                <div className=''>                    
                 <NormalPagination/>
                 </div>
             </div>

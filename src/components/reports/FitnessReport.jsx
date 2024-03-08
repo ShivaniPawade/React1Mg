@@ -57,8 +57,10 @@ const FitnessReport = () => {
                 })}
 
             </tbody>
-
         </table>
+        <div className=''>                    
+                <NormalPagination/>
+                </div>
     </div>
 </>
   )

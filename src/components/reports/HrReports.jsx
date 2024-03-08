@@ -58,6 +58,9 @@ const HrReports = () => {
             </tbody>
 
         </table>
+        <div className=''>                    
+                <NormalPagination/>
+                </div>
     </div>
 </>
   )

@@ -53,6 +53,9 @@ const TelementryReport = () => {
             </tbody>
 
         </table>
+        <div className=''>                    
+                <NormalPagination/>
+                </div>
     </div>
 </>
   )
