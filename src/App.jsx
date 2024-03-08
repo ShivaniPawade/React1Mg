@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Login from "./auth/Login";
-import { Routes, Route , Outlet} from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import HomeCards from "./components/dashboard/Home/HomeCards";
 import Layout from "./components/layout/Layout";
 import HomeComponent from "./components/dashboard/Home/HomeComponent";
@@ -20,7 +20,8 @@ import Administration from "./components/Administration";
 import HrReports from "./components/reports/HrReports";
 import FitnessReport from "./components/reports/FitnessReport";
 import TelementryReport from "./components/reports/TelementryReport";
-
+import Protected from "./auth/Protected";
+import { routes } from "./Routes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,26 +30,50 @@ function App() {
     <>
       {/* <Login/> */}
       <Routes>
-        <Route path="/" element={
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
             <Layout>
               <Outlet />
             </Layout>
           }
         >
           {/* Child routes rendered inside the Outlet */}
-          /* <Route path="/" element={<HomeComponent />} />
-          <Route path="/1MG Dashboard" element={<HomeComponent />} /> 
-          {/* <Route path="/map-live-view" element={<MapComponent/>} /> */}
-          <Route path="/map-live-view" element={<CommonMaps/>} />
-          <Route path="/employeedashboard" element={<Employees/>} />
-          <Route path="/ambulance-information" element={<AmbulanceInformation/>} />
-          <Route path="/hr-management" element={<HrManagement/>} />
-          <Route path="/administration" element={<Administration/>} />
-          <Route path="/hr-report" element={<HrReports/>} />
-          <Route path="/fitness-report" element={<FitnessReport/>} />
-          <Route path="/telementry-report" element={<TelementryReport/>} />
-          
+          {routes.map((mainroute) => {
+            return (
+              <Route
+                path={mainroute.path}
+                element={
+                  <Protected>
+                    <mainroute.component />
+                  </Protected>
+                }
+              />
+            );
+          })}
         </Route>
+
+        {/* <Route
+            path="/1mg-dashboard"
+            element={
+              <Protected>
+                <HomeComponent />
+              </Protected>
+            }
+          /> */}
+        {/* <Route path="/map-live-view" element={<MapComponent/>} /> */}
+        {/* <Route path="/map-live-view" element={<CommonMaps />} />
+          <Route path="/employeedashboard" element={<Employees />} />
+          <Route
+            path="/ambulance-information"
+            element={<AmbulanceInformation />}
+          />
+          <Route path="/hr-management" element={<HrManagement />} />
+          <Route path="/administration" element={<Administration />} />
+          <Route path="/hr-report" element={<HrReports />} />
+          <Route path="/fitness-report" element={<FitnessReport />} />
+          <Route path="/telementry-report" element={<TelementryReport />} /> */}
       </Routes>
     </>
   );
