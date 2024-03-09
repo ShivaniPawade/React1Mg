@@ -64,7 +64,7 @@ const Login = () => {
                 name="password"
                 type="password"
                 id="inputPassword5"
-                className="form-control form-control-lg my-3 pe-5"
+                className="form-control form-control-lg my-3 pe-5 "
                 aria-describedby="passwordHelpBlock"
                 placeholder="Password"
               />
@@ -91,10 +91,10 @@ const Login = () => {
             </div>
           </form>
         </div>
-        {/* <div>
-          <img src={Group}></img>
-        </div> */}
-        <div className="login-page-right d-flex flex-column justify-content-center align items-center">
+        <div className="login-image">
+          <img className="img" src={Group}></img>
+        </div>
+        {/* <div className="login-page-right d-flex flex-column justify-content-center align items-center">
           <div className="image1">
             <img src={image1} alt="image1"></img>
           </div>
@@ -102,7 +102,7 @@ const Login = () => {
             <span>H</span>ealth <span>A</span>ccessible in <span>N</span>eed and{" "}
             <span>U</span>tility for <span>MAN</span>kind
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
