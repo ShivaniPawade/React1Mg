@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout d-flex pt-3">
       {/* ---------------  sidebar start  ------------- */}
-      {location.pathname.includes("employeedashboard") ? (
+      {location.pathname.includes("employee-dashboard") ? (
         <EmployeeSidebar />
       ) : (
         <Sidebar />
