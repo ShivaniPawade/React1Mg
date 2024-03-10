@@ -13,7 +13,7 @@ const Sidebar = () => {
         <div className="logo">
           <img src={logo} alt='logo'></img>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex align-items-center mb-3 ">
           <div className="icons-border">
             <img className="icons " src={dashboard} alt="icon"></img>
           </div>

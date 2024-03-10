@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  ambulanceImage,
-  call,
-  callRequest,
-  mapview,
-  callDispatched,
-  callDeclined,
-  callCompleted,
+import {ambulanceImage,call,callRequest,mapview,callDispatched,callDeclined,callCompleted,
 } from "../../../assets";
 import NavbarCards from "../../layout/NavbarCards";
 import { Link } from "react-router-dom";
@@ -164,7 +157,7 @@ const HomeComponent = () => {
       data,
       (success) => {
         const extractedValues = Object.values(success.data[0]);
-        const newCards = {...cards}
+        const newCards = { ...cards }
         newCards.forEach((item, index) => {
           item.value = extractedValues[index];
         });
