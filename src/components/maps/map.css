@@ -197,21 +197,26 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.376px;
-  padding: 0.2rem 0.99rem;
+  /* padding: 0.2rem 0.99rem; */
 }
-table {
+.table-borderedd table{
+  border: 1.568px solid #CFCFCF;
   width: 100%;
-  /* border: 1.568px solid #cfcfcf; */
-  /* border-collapse: collapse; */
+}
+.table-borderedd th{
+  padding: 0.2rem;
+}
+.table-borderedd td{
+  padding: 0.2rem;
 }
 .td-color {
   color: #6d6d6d;
 }
 th:first-child {
-  border-top-left-radius: 10.5px;
+  border-top-left-radius: 7.84px;
 }
 th:last-child {
-  border-top-right-radius: 10.5px;
+  border-top-right-radius: 7.84px;
 }
 
 .places-container {

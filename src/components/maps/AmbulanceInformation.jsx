@@ -143,7 +143,7 @@ const AmbulanceInformation = (props) => {
           <h2 className="equipment-heading mb-0">Equipment List</h2>
           <Link className="view-all text-decoration-none ">View All</Link>
         </div>
-        <table className="mt-1">
+        <table className="table-borderedd border-secondary">
           <thead>
             <tr>
               <th className="etable-heading">Items</th>

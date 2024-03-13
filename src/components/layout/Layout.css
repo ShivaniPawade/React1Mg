@@ -274,8 +274,8 @@
   }
   /* ------  graph  ------ */
   .graph {
-    width: 344.736px;
-    height: 325.584px;
+    /* width: 344.736px;
+    height: 325.584px; */
     .turn-around {
       color: #1e1e1e;
       text-align: center;
@@ -285,6 +285,7 @@
       font-weight: 700;
       line-height: normal;
     }
+    
   }
   /* -------- audit window  --------- */
   .audit-window {

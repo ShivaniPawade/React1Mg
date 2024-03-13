@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {ambulanceImage,call,callRequest,mapview,callDispatched,callDeclined,callCompleted,
+import {
+  ambulanceImage, call, callRequest, mapview, callDispatched, callDeclined, callCompleted,
 } from "../../../assets";
 import NavbarCards from "../../layout/NavbarCards";
 import { Link } from "react-router-dom";
@@ -245,11 +246,12 @@ const HomeComponent = () => {
               })}
             </tbody>
           </table>
-          <PaginationComponent />
+          <div className="pb-3 pe-2"> <PaginationComponent /></div>
         </div>
-        <div className="graph common-border">
-          <h2 className="text-center pt-1 turn-around">Turn Around Time</h2>
-          <PieChartWithCenterLabel />
+        <div className="graph common-border d-flex flex-column ">
+          <h2 className="text-center pt-3 mb-0 turn-around">Turn Around Time</h2>
+          <div className=""><PieChartWithCenterLabel /></div>
+          <h4 className="text-center">Details</h4>
         </div>
       </div>
 
