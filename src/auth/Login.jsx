@@ -19,7 +19,7 @@ const Login = () => {
     setuser(obj);
   };
 
-  const Login = (e) => {
+  const userLogin = (e) => {
     e.preventDefault();
     POSTAPI(
       BASEURL + "auth/PartnerLogin",
@@ -45,7 +45,7 @@ const Login = () => {
           </div>
           <h1 className="pt-4">Log into your account.</h1>
           <p className="pb-3">Enter your Email ID and Password to Login</p>
-          <form onSubmit={Login}>
+          <form onSubmit={userLogin}>
             <div className="email">
               <img src={email} className="email-image" />
               <input

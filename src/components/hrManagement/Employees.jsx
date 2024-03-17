@@ -81,7 +81,7 @@ const Employees = () => {
           <div className="d-flex justify-content-between mx-3">
             <div className=" common-border p-3 mb-2 me-2 d-flex flex-column gap-2 ">
               <h2 className="mark-attendance">Mark Attendance</h2>
-              <button type="button" className="btn btn-success btn-sm mx-3 clock">Clock In</button>
+              <button type="button" className="btn btn-success btn-sm mx-3  clock">Clock In</button>
               <button type="button" className="btn btn-danger btn-sm mx-3 mt-2 clock">Clock Out</button>
             </div>
             <div className="middle-line mb-2"></div>
@@ -126,7 +126,7 @@ const Employees = () => {
                   <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileInputChange} />
                 </div>
               </div>
-                <button type="button" class="btn btn-sm btn-outline-success text-dark mx-3 px-3 py-0 upload">Upload</button>
+              <button type="button" class="btn btn-sm btn-outline-success text-dark mx-3 px-3 py-0 upload">Upload</button>
             </div>
 
           </div>

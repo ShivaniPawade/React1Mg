@@ -58,20 +58,23 @@ const AmbulanceInformation = (props) => {
         </div>
       </div>
       {/* -------------- */}
-      <div className="d-flex  justify-content-between px-3 pt-2">
-        <h1 className="map-heading">Tempo Traveller Ambulance</h1>
+    <div className="pt-0 p-3">
+      <div className="d-flex  justify-content-between align-items-center  ">
+        <h1 className="map-heading mb-0">Tempo Traveller Ambulance</h1>
         <div>
           <img src={Share}></img>
           <button className="btn" onClick={() => props.setcurrentMarker(null)}>
-            <img src={Close} className="ps-3"></img>
+            <img src={Close} className=""></img>
           </button>
         </div>
       </div>
-      <h2 className="vehicle ps-3">Reg No. - BH 05 DS 2451</h2>
-      <h3 className="color-change vehicle ps-3">Vehicle Model: 3350</h3>
-      <img className="ps-3" src={MapAmbulance}></img>
+      <h2 className="vehicle">Reg No. - BH 05 DS 2451</h2>
+      <h3 className="color-change vehicle ">Vehicle Model: 3350</h3>
+      <div className="map-ambulance">
+      <img className=" img" src={MapAmbulance}></img>
+      </div>
       {/* --------------- */}
-      <div className="staff ms-3 m-3 p-3">
+      <div className="staff  my-3 p-3">
         <h2 className="staff-details">Staff Details </h2>
         <div className="d-flex  ">
           <div className="staff-img">
@@ -135,12 +138,12 @@ const AmbulanceInformation = (props) => {
         </div>
       </div>
       {/* ------------- equipment-list----------- */}
-      <div className="equipment-list m-3 p-3">
+      <div className="equipment-list my-3 p-3">
         <div className="d-flex justify-content-between align-items-center">
           <h2 className="equipment-heading mb-0">Equipment List</h2>
           <Link className="view-all text-decoration-none ">View All</Link>
         </div>
-        <table className="mt-1">
+        <table className="table-borderedd border-secondary">
           <thead>
             <tr>
               <th className="etable-heading">Items</th>
@@ -162,6 +165,7 @@ const AmbulanceInformation = (props) => {
             })}
           </tbody>
         </table>
+      </div>
       </div>
     </div>
   );

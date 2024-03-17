@@ -55,6 +55,13 @@
   /* height: 538.608px;  */
   /* border: 1px solid black; */
 }
+.map-ambulance {
+  width: 18.9rem;
+  height: 11.07rem;
+  .img {
+    width: 100%;
+  }
+}
 .map-location-background {
   background: #ef5820;
   filter: drop-shadow(0px 3.136px 3.842px rgba(0, 0, 0, 0.22));
@@ -190,22 +197,26 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.376px;
-  padding: 0.2rem 0.99rem;
+  /* padding: 0.2rem 0.99rem; */
 }
-table
-{
+.table-borderedd table{
+  border: 1.568px solid #CFCFCF;
   width: 100%;
-  /* border: 1.568px solid #cfcfcf; */
-  /* border-collapse: collapse; */
+}
+.table-borderedd th{
+  padding: 0.2rem;
+}
+.table-borderedd td{
+  padding: 0.2rem;
 }
 .td-color {
   color: #6d6d6d;
 }
 th:first-child {
-  border-top-left-radius: 10.5px;
+  border-top-left-radius: 7.84px;
 }
 th:last-child {
-  border-top-right-radius: 10.5px;
+  border-top-right-radius: 7.84px;
 }
 
 .places-container {
@@ -231,9 +242,9 @@ th:last-child {
   border-radius: 24.304px;
 }
 
-.places-container .combobox-input:focus{
-  outline: none;  
+.places-container .combobox-input:focus {
+  outline: none;
 }
-.middle-line{
-  border: 1px solid #B1B1B1;
+.middle-line {
+  border: 1px solid #b1b1b1;
 }

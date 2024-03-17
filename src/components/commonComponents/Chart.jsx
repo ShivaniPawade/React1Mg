@@ -28,7 +28,7 @@ function PieCenterLabel({ children }) {
 
     return (
         <>
-            {lines.map((line, index) => (
+        {lines.map((line, index) => (
                 <StyledText
                     key={index}
                     x={left + width / 2}
@@ -46,7 +46,7 @@ export default function PieChartWithCenterLabel() {
         <>
             <h1></h1>
             <PieChart
-                series={[{ data, innerRadius: 80 }]}
+                series={[{ data, innerRadius: 85 }]}
                 {...size}
                 colors={["#FFF500", "#205AEF", "#0F8805", "#EF5820"]}
             >
