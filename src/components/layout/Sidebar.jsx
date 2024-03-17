@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { dashboard, logo, call, logout, report, bell, offer, ambulance, account, group, map, user, mapview, ambulanceImage, callRequest } from "../../assets";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,useLocation} from 'react-router-dom'
 const Sidebar = () => {
+  let location = useLocation();
   const navigate = useNavigate();
   const handleLogout =()=>{
     localStorage.clear();
@@ -17,7 +18,7 @@ const Sidebar = () => {
           <div className="icons-border">
             <img className="icons " src={dashboard} alt="icon"></img>
           </div>
-          <Link className="text-decoration-none" to={"/"}> <h2 className="sidebar-links pt-2 ">Dashboard</h2></Link>
+          <Link className="text-decoration-none" to={"/1mg-dashboard"}> <h2 className="sidebar-links pt-2 ">Dashboard</h2></Link>
         </div>
         <div className="d-flex align-items-center mb-3">
           <div className="icons-border">

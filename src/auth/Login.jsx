@@ -27,7 +27,7 @@ const Login = () => {
       (data) => {
         localStorage.setItem("usertoken", data.token);
         localStorage.setItem("user", JSON.stringify(data.data[0]));
-        navigate("/");
+        navigate("/1mg-dashboard");
       },
       (error) => {
         console.log(error);

@@ -178,10 +178,10 @@ const HomeComponent = () => {
   };
   return (
     <div className="dashboard ">
-      <div className="d-flex justify-content-between py-1">
+      <div className="d-flex justify-content-between py-1" style={{gap:"50px"}}>
         {cards.map((item) => {
           return (
-            <div className="">
+            <div className="w-100">
               <NavbarCards item={item} />
             </div>
           );
