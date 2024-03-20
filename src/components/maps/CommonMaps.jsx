@@ -9,7 +9,7 @@ const CommonMaps = (props) => {
   return (
     // <div className={currentMarker!=null ? "d-flex":""}>
     <div className={"d-flex"}>
-      <div className="map common-border position-relative w-100">
+      <div className="map common-border position-relative w-100 h-auto">
         <div className="d-flex justify-content-between">
           <div className="display-search d-flex justify-content-around align-items-center px-3">
             <img src={Location}></img>

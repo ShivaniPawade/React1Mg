@@ -177,7 +177,7 @@ export default function MapComponent(props) {
     props.setcurrentMarker(marker);
   };
   return (
-    <div className="app" style={{ height: "80vh", width: "100%" }}>
+    <div className="app w-100 h-100" >
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDfnY7GcBdHHFQTxRCSJGR-AGUEUnMBfqo" }} // Replace with your API key
         defaultCenter={{ lat: 54.6872, lng: 25.2797 }}
