@@ -5,13 +5,13 @@
 }
 /* --------  map  ------- */
 .map {
-  height: 80vh;
+  height: 94vh;
   padding: 1rem;
   position: relative;
 }
-.map:first-child {
+/* .map:first-child {
   height: 100% !important;
-}
+} */
 .map-auto-complete {
   position: absolute;
   z-index: 9999;
