@@ -1,11 +1,11 @@
 .login-page {
-  max-width: 85%;
-  margin: 3rem auto;
-  gap: 5rem;
-  justify-content: center;
+  max-width: 95%; 
+  margin: 1rem auto; 
+  gap: 3rem;
+   justify-content: center;
 }
 .login-page-left {
-  padding: 4rem 0;
+  padding: 4.5rem 0;
   h1 {
     color: #1a1a1a;
     font-family: Poppins;
@@ -49,10 +49,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border-radius: 16.589px;
+    border-radius: 13.2px;
     background: #f3f9ff;
     padding-left: 3.5rem;
-    
   }
   .forget-password {
     color: #f87c02;
@@ -105,7 +104,7 @@
   }
 }
 
-.login-page-right {
+/* .login-page-right {
   width: min-content;
   padding: 2rem;
   border-radius: 29.952px;
@@ -130,5 +129,16 @@
     img {
       width: 100%;
     }
+  }
+} */
+
+.login-image {
+  /* width: 563.098px;
+  height: 745.574px; */
+  width:28.1rem ;
+  height:32.5rem ;
+  .img{
+width: 100%;
+object-fit: contain;
   }
 }

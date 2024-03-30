@@ -13,7 +13,7 @@
 //   let coordinates = [
 //     {
 //       lat: 53.1408926,
-//       lng: -3.3684601,
+//       lng: -3.3684601,h-100
 //     },
 //     { lat: 19.2025, lng: 76.220521 },
 //     {
@@ -177,7 +177,7 @@ export default function MapComponent(props) {
     props.setcurrentMarker(marker);
   };
   return (
-    <div className="app" style={{ height: "80vh", width: "100%" }}>
+    <div className="app w-100 h-100" >
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDfnY7GcBdHHFQTxRCSJGR-AGUEUnMBfqo" }} // Replace with your API key
         defaultCenter={{ lat: 54.6872, lng: 25.2797 }}

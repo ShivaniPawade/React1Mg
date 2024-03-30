@@ -11,8 +11,9 @@ import TelementryReport from "./components/reports/TelementryReport";
 export const routes = [
 
     { path: "/", component: HomeComponent },
+    { path: "/1mg-dashboard", component: HomeComponent },
     { path: "/map-live-view", component: CommonMaps },
-    { path: "/employeedashboard", component: Employees },
+    { path: "/employee-dashboard", component: Employees },
     { path: "/ambulance-information", component: AmbulanceInformation },
     { path: "/hr-management", component: HrManagement },
     { path: "/administration", component: Administration },

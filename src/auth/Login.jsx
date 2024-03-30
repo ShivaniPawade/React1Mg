@@ -19,7 +19,7 @@ const Login = () => {
     setuser(obj);
   };
 
-  const Login = (e) => {
+  const userLogin = (e) => {
     e.preventDefault();
     POSTAPI(
       BASEURL + "auth/PartnerLogin",
@@ -27,7 +27,7 @@ const Login = () => {
       (data) => {
         localStorage.setItem("usertoken", data.token);
         localStorage.setItem("user", JSON.stringify(data.data[0]));
-        navigate("/");
+        navigate("/1mg-dashboard");
       },
       (error) => {
         console.log(error);
@@ -45,7 +45,7 @@ const Login = () => {
           </div>
           <h1 className="pt-4">Log into your account.</h1>
           <p className="pb-3">Enter your Email ID and Password to Login</p>
-          <form onSubmit={Login}>
+          <form onSubmit={userLogin}>
             <div className="email">
               <img src={email} className="email-image" />
               <input
@@ -64,7 +64,7 @@ const Login = () => {
                 name="password"
                 type="password"
                 id="inputPassword5"
-                className="form-control form-control-lg my-3 pe-5"
+                className="form-control form-control-lg my-3 pe-5 "
                 aria-describedby="passwordHelpBlock"
                 placeholder="Password"
               />
@@ -91,10 +91,10 @@ const Login = () => {
             </div>
           </form>
         </div>
-        {/* <div>
-          <img src={Group}></img>
-        </div> */}
-        <div className="login-page-right d-flex flex-column justify-content-center align items-center">
+        <div className="login-image">
+          <img className="img" src={Group}></img>
+        </div>
+        {/* <div className="login-page-right d-flex flex-column justify-content-center align items-center">
           <div className="image1">
             <img src={image1} alt="image1"></img>
           </div>
@@ -102,7 +102,7 @@ const Login = () => {
             <span>H</span>ealth <span>A</span>ccessible in <span>N</span>eed and{" "}
             <span>U</span>tility for <span>MAN</span>kind
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

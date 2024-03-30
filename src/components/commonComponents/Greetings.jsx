@@ -3,7 +3,7 @@ import { ambulanceImage } from '../../assets'
 
 const Greetings = () => {
     return (
-            <div className="map-view common-border d-flex">
+            <div className="map-view common-border d-flex ">
                 <div>
                     <h2 className="common-heading greeting-color mb-0 pt-4">Greetings</h2>
                     <h3 className="common-heading ">Sandeep Krishna</h3>
